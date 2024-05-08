@@ -1,7 +1,20 @@
-import Child1 from "./Child1";
+import { useState } from "react";
+import Header from "./Header";
 
 const Parent = () => {
-     return <Child1 variantChange1="Hi" data="123" />;
+     const [work, setWork] = useState(1);
+
+     function sum() {
+          setWork(work + 5);
+     }
+     console.log("rendering Header");
+     return (
+          <section>
+               <Header work={work} setWork={sum} />
+               <div>{work}</div>
+               <footer>Footer</footer>
+          </section>
+     );
 };
 
 export default Parent;
