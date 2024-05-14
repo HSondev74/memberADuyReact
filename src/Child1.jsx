@@ -1,27 +1,27 @@
 import Child2 from "./Child2";
 
 const Child1 = ({ variantChange }) => {
-     const arr = ["Hi", "Hello", "Hello1"];
-     const obj = {
-          text: "Hello, world",
-     };
+     // const arr = ["Hi", "Hello", "Hello1"];
+     // const obj = {
+     //      text: "Hello, world",
+     // };
+     //
+     // const textSplit = obj.text.split(", ");
+     // textSplit.forEach((item1) => {
+     //      const foundWord = arr.find((item2) => item2 === item1);
+     //      if (obj.text.includes(foundWord)) {
+     //           obj.text = obj.text.replace(
+     //                foundWord,
+     //                variantChange || foundWord
+     //           );
+     //      }
+     // });
 
-     const textSplit = obj.text.split(", ");
-     textSplit.forEach((item1) => {
-          const foundWord = arr.find((item2) => item2 === item1);
-          if (obj.text.includes(foundWord)) {
-               obj.text = obj.text.replace(
-                    foundWord,
-                    variantChange || foundWord
-               );
-          }
-     });
-
-     console.log(obj);
+     // console.log(obj);
      return (
           <>
-               <h1>{obj.text}</h1>
-               <Child2 data={1} />
+               {/*<h1>{obj.text}</h1>*/}
+               {/*<Child2 data={1} />*/}
           </>
      );
 };
